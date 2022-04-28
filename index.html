@@ -4,50 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Fira+Sans&family=Inconsolata&display=swap"
+      rel="stylesheet"
+    />
     <link href="./dist/index.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Susie Valdez CV</title>
   </head>
   <body>
-    <div class="mx-6 my-6">
+    <div class="p-6 text-xs">
       <header class="flex place-content-between">
-        <div class="mb-4">
-          <h1 class="text-7xl">Susie Valdez</h1>
-          <h4>Medical Graduate@Instituto Tecnologico de Monterrey</h4>
+        <div>
+          <h1 class="font-serif text-7xl">Susie Valdez</h1>
+          <h4 class="text-center italic">
+            Medical Doctor -> Software Engineer
+          </h4>
         </div>
 
-        <ul class="grid gap-2 grid-cols-2 grid-flow-row">
-          <li>
-            <img
-              class="w-4 h-4 inline mr-2"
-              src="./assets/envelope-solid.svg"
-            />
+        <ul class="columns-2 mt-2">
+          <li class="mb-1">
+            <img class="w-4 inline mr-2" src="./assets/envelope-solid.svg" />
             susiivaldez@gmail.com
           </li>
-          <li>
-            <img class="w-4 h-4 inline mr-2" src="./assets/globe-solid.svg" /><a
+          <li class="mb-1">
+            <img class="w-4 inline mr-2" src="./assets/phone-solid.svg" />
+            (+52) 81 1063 6225
+          </li>
+          <li class="mb-1">
+            <img
+              class="w-4 inline mr-2"
+              src="./assets/location-dot-solid.svg"
+            />Monterrey, Mexico
+          </li>
+          <li class="mb-1">
+            <img class="w-4 inline mr-2" src="./assets/globe-solid.svg" /><a
               href="https://www.susie.mx"
               >susie.mx</a
             >
           </li>
-          <li>
-            <img class="w-4 h-4 inline mr-2" src="./assets/phone-solid.svg" />
-            (+52) 81 - 1063 - 6225
-          </li>
-          <li>
-            <img class="w-4 h-4 inline mr-2" src="./assets/github-brands.svg" />
+          <li class="mb-1">
+            <img class="w-4 inline mr-2" src="./assets/github-brands.svg" />
             <a href="https://github.com/SusieValdez">Github/SusieValdez</a>
           </li>
-          <li>
-            <img
-              class="w-4 h-4 inline mr-2"
-              src="./assets/location-dot-solid.svg"
-            />Monterrey, Mexico
-          </li>
-          <li>
-            <img
-              class="w-4 h-4 inline mr-2"
-              src="./assets/linkedin-brands.svg"
-            />
+          <li class="mb-1">
+            <img class="w-4 inline mr-2" src="./assets/linkedin-brands.svg" />
             <a
               href="https://www.linkedin.com/in/sylvia-susana-valdez-mireles-64874b180/"
               >LinkedIn/SusieValdez</a
@@ -56,293 +58,617 @@
         </ul>
       </header>
 
-      <div class="grid gap-6 grid-cols-2 grid-flow-row auto-rows-max">
-        <div class="mb-4">
-          <h2 class="text-xl font-bold text-violet-800">Projects</h2>
-
+      <div class="grid grid-cols-2 gap-6">
+        <!-- Column 1 -->
+        <div class="flex flex-col gap-y-2">
           <div>
-            <div class="flex place-content-start w-90">
-              <span
-                class="mx-2 text-xs font-thin bg-gray-200 text-gray-700 px-2 py-1 rounded-md"
-                >JavaScript | React</span
-              >
-              <h3 class="font-semibold mr-6">Discuss:</h3>
-            </div>
-            <ul class="ml-3">
-              <li>- Discord clone made as a web app.</li>
-              <li>- Support real-time communication between multiple users.</li>
-              <li>- Allows multiple servers and channels.</li>
-              <li>
-                - Secure log-in using credentials but also using QR code to sync
-                with the user's phone.
-              </li>
-            </ul>
-          </div>
+            <h2 class="font-serif text-2xl font-bold text-violet-800">
+              Projects
+            </h2>
+            <p class="italic">
+              I have many projects on GitHub. Here are my favourite ones!
+            </p>
+            <div class="flex flex-col gap-y-2">
+              <div>
+                <div class="flex place-content-between">
+                  <h3 class="text-sm font-bold">
+                    Instant Coffee
+                    <span class="text-xs">
+                      <span
+                        class="font-mono font-thin bg-teal-300 text-gray-700 px-2 rounded-md"
+                        >Godot+GDScript</span
+                      >
+                    </span>
+                  </h3>
+                  <span class="">2022</span>
+                </div>
+                <ul class="list-disc">
+                  <li>
+                    A game where the player collects items while avoiding the
+                    AI.
+                  </li>
+                  <li>
+                    Built AI's pathfinding and behaviour with a State Machine.
+                  </li>
+                </ul>
+              </div>
 
+              <div>
+                <div class="flex place-content-between">
+                  <h3 class="text-sm font-bold">
+                    Gokémon
+                    <span class="text-xs">
+                      <span
+                        class="font-mono font-thin bg-blue-500 text-gray-700 px-2 rounded-md"
+                        >TypeScript</span
+                      >
+                      <span
+                        class="font-mono font-thin bg-blue-300 text-gray-700 px-2 rounded-md"
+                        >React</span
+                      >
+                      <span
+                        class="font-mono font-thin bg-cyan-300 text-gray-700 px-2 rounded-md"
+                        >Golang</span
+                      >
+                    </span>
+                  </h3>
+                  <span class="">2022</span>
+                </div>
+                <ul class="list-disc">
+                  <li>
+                    Web based Pokémon card collection and trading web game.
+                  </li>
+                  <li>
+                    Supports user accounts, friend lists, and login based
+                    rewards.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex place-content-between">
+                  <h3 class="text-sm font-bold">
+                    Cartographer
+                    <span class="text-xs">
+                      <span
+                        class="font-mono font-thin bg-blue-500 text-gray-700 px-2 rounded-md"
+                        >TypeScript</span
+                      >
+                      <span
+                        class="font-mono font-thin bg-blue-300 text-gray-700 px-2 rounded-md"
+                        >React</span
+                      >
+                      <span
+                        class="font-mono font-thin bg-cyan-300 text-gray-700 px-2 rounded-md"
+                        >Golang</span
+                      >
+                      <span
+                        class="font-mono font-thin bg-green-300 text-gray-700 px-2 rounded-md"
+                        >Postgres</span
+                      >
+                    </span>
+                  </h3>
+                  <span class="">2022</span>
+                </div>
+                <ul class="list-disc">
+                  <li>
+                    Supports drawing pictures and stores them in Postgres.
+                  </li>
+                  <li>
+                    Supports large browser canvas, with panning and zooming.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex place-content-between">
+                  <h3 class="text-sm font-bold">
+                    Reddit->Discord Bot
+                    <span class="text-xs">
+                      <span
+                        class="font-mono font-thin bg-yellow-300 text-gray-700 px-2 rounded-md"
+                        >JavaScript</span
+                      >
+                      <span
+                        class="font-mono font-thin bg-violet-300 text-gray-700 px-2 rounded-md"
+                        >Node.JS</span
+                      >
+                    </span>
+                  </h3>
+                  <span class="">2022</span>
+                </div>
+                <ul class="list-disc">
+                  <li>
+                    Pulls random images from a subreddit, and posts it to
+                    Discord.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex place-content-between">
+                  <h3 class="text-sm font-bold">
+                    Discuss
+                    <span class="text-xs">
+                      <span
+                        class="font-mono font-thin bg-yellow-300 text-gray-700 px-2 rounded-md"
+                        >JavaScript</span
+                      >
+                      <span
+                        class="font-mono font-thin bg-blue-300 text-gray-700 px-2 rounded-md"
+                        >React</span
+                      >
+                      <span
+                        class="font-mono font-thin bg-violet-300 text-gray-700 px-2 rounded-md"
+                        >Node.JS</span
+                      >
+                      <span
+                        class="font-mono font-thin bg-green-300 text-gray-700 px-2 rounded-md"
+                        >MongoDB</span
+                      >
+                      <span
+                        class="font-mono font-thin bg-red-300 text-gray-700 px-2 rounded-md"
+                        >WebSockets</span
+                      >
+                    </span>
+                  </h3>
+                  <span class="">2021-2022</span>
+                </div>
+                <ul class="list-disc">
+                  <li>Complete Discord clone, with servers and channels.</li>
+                  <li>Supports real-time communication between users.</li>
+                  <li>
+                    Secure log-in via email+pass or QR code and user's phone.
+                  </li>
+                  <li>Supports link highlighting and expanded images.</li>
+                  <li>Users can configure their profiles and online-status.</li>
+                  <li>
+                    Server admins can add user roles and configure permissions.
+                  </li>
+                  <li>Permissions can allow users to manage users/servers.</li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex place-content-between">
+                  <h3 class="text-sm font-bold">
+                    React Movie Database
+                    <span class="text-xs">
+                      <span
+                        class="font-mono font-thin bg-yellow-300 text-gray-700 px-2 rounded-md"
+                        >JavaScript</span
+                      >
+                      <span
+                        class="font-mono font-thin bg-blue-300 text-gray-700 px-2 rounded-md"
+                        >React</span
+                      >
+                    </span>
+                  </h3>
+                  <span class="">2021</span>
+                </div>
+                <ul class="list-disc">
+                  <li>
+                    Netflix/IMDB clone, pulls movie data from TheMovieDB API.
+                  </li>
+                  <li>
+                    Supports searching for movies by name, or description.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex place-content-between">
+                  <h3 class="text-sm font-bold">
+                    Tim 'n' RAVs
+                    <span class="text-xs">
+                      <span
+                        class="font-mono font-thin bg-teal-300 text-gray-700 px-2 rounded-md"
+                        >Godot+GDScript</span
+                      >
+                    </span>
+                  </h3>
+                  <span class="">2021</span>
+                </div>
+                <ul class="list-disc">
+                  <li>
+                    Fast-paced 2D game where the player has to collect items,
+                    while avoiding deadly obstacles.
+                  </li>
+                  <li>
+                    Learnt a lot about collaborating on a project with git.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex place-content-between">
+                  <h3 class="text-sm font-bold">
+                    Singing Kittens
+                    <span class="text-xs">
+                      <span
+                        class="font-mono font-thin bg-yellow-300 text-gray-700 px-2 rounded-md"
+                        >JavaScript</span
+                      >
+                      <span
+                        class="font-mono font-thin bg-blue-300 text-gray-700 px-2 rounded-md"
+                        >React</span
+                      >
+                    </span>
+                  </h3>
+                  <span class="">2021</span>
+                </div>
+                <ul class="list-disc">
+                  <li>
+                    A web based sequencer, which plays various sound effects.
+                  </li>
+                  <li>User can configure which sounds play on which beats.</li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex place-content-between">
+                  <h3 class="text-sm font-bold">
+                    Bard
+                    <span class="text-xs">
+                      <span
+                        class="font-mono font-thin bg-yellow-300 text-gray-700 px-2 rounded-md"
+                        >JavaScript</span
+                      >
+                      <span
+                        class="font-mono font-thin bg-violet-300 text-gray-700 px-2 rounded-md"
+                        >Node.JS</span
+                      >
+                    </span>
+                  </h3>
+                  <span class="">2021</span>
+                </div>
+                <ul class="list-disc">
+                  <li>Wrote a CLI to track programming articles I had read.</li>
+                  <li>
+                    CLI POSTs the article information to a custom GitHub Action
+                  </li>
+                  <li>
+                    The GitHub Action scans the article's metadata for images
+                    and then stores all the information in a JSON file in a
+                    GitHub repo.
+                  </li>
+                  <li>
+                    My website fetches this JSON file and renders the articles.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex place-content-between">
+                  <h3 class="text-sm font-bold">
+                    100 Days of Code Challenge
+                    <span class="text-xs">
+                      <span
+                        class="font-mono font-thin bg-yellow-300 text-gray-700 px-2 rounded-md"
+                        >JavaScript</span
+                      >
+                      <span
+                        class="font-mono font-thin bg-orange-300 text-gray-700 px-2 rounded-md"
+                        >HTML+CSS</span
+                      >
+                    </span>
+                  </h3>
+                  <span class="">2021</span>
+                </div>
+                <ul class="list-disc">
+                  <li>
+                    Self imposed challenge to write code everyday, to learn
+                    faster.
+                  </li>
+                  <li>
+                    Displays commit history in a pretty grid, using GitHub's
+                    API.
+                  </li>
+                  <li>
+                    Cached results to fit within GitHub's restrictive API call
+                    limits.
+                  </li>
+                  <li>Wrote backend API to store cached commit information.</li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex place-content-between">
+                  <h3 class="text-sm font-bold">
+                    DIY-Lang
+                    <span class="text-xs">
+                      <span
+                        class="font-mono font-thin bg-yellow-400 text-gray-700 px-2 rounded-md"
+                        >Python</span
+                      >
+                    </span>
+                  </h3>
+                  <span class="">2021</span>
+                </div>
+                <ul class="list-disc">
+                  <li>A turing complete functional programming language.</li>
+                  <li>Wrote a parser, evaluater, and REPL.</li>
+                  <li>
+                    Supports extending it's standard library in it's own
+                    language.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Column 1 -->
+        <!-- Column 2 -->
+        <div class="flex flex-col gap-y-2">
           <div>
-            <div class="flex place-content-start w-90">
-              <span
-                class="mx-2 text-xs font-thin bg-gray-200 text-gray-700 px-2 py-1 rounded-md"
-              >
-                JavaScript | React</span
-              >
-              <h3 class="font-semibold mr-6">React Movie Database:</h3>
-            </div>
-            <ul class="ml-3">
-              <li>
-                - Movie database using JavaScript and React.js using themoviedb
-                API.
-              </li>
-              <li>
-                - Displays a catalog of movies with respective information of
-                each one.
-              </li>
-              <li>- Allows searching for titles</li>
-            </ul>
-          </div>
-
-          <div>
-            <div class="flex place-content-start w-90">
-              <span
-                class="mx-2 text-xs font-thin bg-gray-200 text-gray-700 px-2 py-1 rounded-md"
-              >
-                JavaScript | React</span
-              >
-              <h3 class="font-semibold mr-6">100 Days Code Challenge:</h3>
-            </div>
-            <ul class="ml-3">
-              <li>
-                - Commit at least once per day for a total of 100 days using a
-                countdown.
-              </li>
-              <li>- Syncs to Github API to fetch commit history.</li>
-              <li>
-                - Displays commits in a similar way to Github, changing color
-                intensity based on # of commits.
-              </li>
-            </ul>
-          </div>
-
-          <div class="flex place-content-start w-90">
-            <span
-              class="mx-2 text-xs font-thin bg-gray-200 text-gray-700 px-2 py-1 rounded-md"
+            <h2 class="font-serif text-2xl font-bold text-violet-800">
+              Computing Skills
+            </h2>
+            <div
+              class="w-auto mt-2 mb-2 pl-6 grid gap-2 grid-cols-3 grid-flow-row auto-rows-max text-center"
             >
-              GDScript | Godot
-            </span>
-            <h3 class="font-semibold mr-6">TIM N' RAVS</h3>
+              <span
+                class="font-mono font-thin bg-yellow-300 text-gray-700 px-2 rounded-md"
+                >JavaScript</span
+              >
+              <span
+                class="font-mono font-thin bg-blue-600 text-gray-700 px-2 rounded-md"
+                >TypeScript</span
+              >
+              <span
+                class="font-mono font-thin bg-violet-300 text-gray-700 px-2 rounded-md"
+                >Node.JS</span
+              >
+              <span
+                class="font-mono font-thin bg-blue-300 text-gray-700 px-2 rounded-md"
+                >React.JS</span
+              >
+              <span
+                class="font-mono font-thin bg-orange-300 text-gray-700 px-2 rounded-md"
+                >React.JS</span
+              >
+              <span
+                class="font-mono font-thin bg-cyan-400 text-gray-700 px-2 rounded-md"
+                >Golang</span
+              >
+              <span
+                class="font-mono font-thin bg-green-300 text-gray-700 px-2 rounded-md"
+                >SQL+NOSQL</span
+              >
+              <span
+                class="font-mono font-thin bg-red-300 text-gray-700 px-2 rounded-md"
+                >WebSockets</span
+              >
+              <span
+                class="font-mono font-thin bg-green-600 text-gray-700 px-2 rounded-md"
+                >Git</span
+              >
+              <span
+                class="font-mono font-thin bg-gray-300 text-gray-700 px-2 rounded-md"
+                >CLIs</span
+              >
+              <span
+                class="font-mono font-thin bg-amber-600 text-gray-700 px-2 rounded-md"
+                >MATLAB</span
+              >
+              <span
+                class="font-mono font-thin bg-teal-300 text-gray-700 px-2 rounded-md"
+                >Godot+GDScript</span
+              >
+            </div>
           </div>
-          <ul class="ml-3">
-            <li>
-              - Fast-paced 2D Multilevel platformer videogame where the player
-              has to collect items and pass to the next level.
-            </li>
-            <li>- Displays user's time spent per level.</li>
-          </ul>
 
           <div>
-            <div class="flex place-content-start w-90">
-              <span
-                class="mx-2 text-xs font-thin bg-gray-200 text-gray-700 px-2 py-1 rounded-md"
-              >
-                Godot | GDScript</span
-              >
-              <h3 class="font-semibold mr-6">Instant Coffee</h3>
+            <h2 class="font-serif text-2xl font-bold text-violet-800">
+              Experience
+            </h2>
+            <div class="flex flex-col gap-y-2">
+              <div>
+                <div class="flex place-content-between">
+                  <h3 class="text-sm font-bold">
+                    JAVA Plasticos - Freelance web developer
+                    <span class="text-xs">
+                      <span
+                        class="font-mono font-thin bg-blue-500 text-gray-700 px-2 rounded-md"
+                        >TypeScript</span
+                      >
+                      <span
+                        class="font-mono font-thin bg-blue-300 text-gray-700 px-2 rounded-md"
+                        >React</span
+                      >
+                    </span>
+                  </h3>
+                  <span class="">2021-2022</span>
+                </div>
+                <ul class="list-disc">
+                  <li>E-commerce shop for a local business.</li>
+                  <li>Wrote a mobile app to manage the product information.</li>
+                  <li>
+                    Connect site contact form with a bespoke WhatsApp bot.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex place-content-between">
+                  <h3 class="text-sm font-bold">
+                    DIF Capullos - Medical Doctor
+                    <span class="text-xs">
+                      <span
+                        class="font-mono font-thin bg-red-500 text-gray-700 px-2 rounded-md"
+                        >Medicine</span
+                      >
+                    </span>
+                  </h3>
+                  <span class="">2018-2019</span>
+                </div>
+                <ul class="list-disc">
+                  <li>
+                    Worked in collaboration with other health staff members to
+                    provide care for the State foster system children.
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex place-content-between">
+                  <h3 class="text-sm font-bold">
+                    Houston Methodist Research Institute - Medical Doctor Intern
+                    <span class="text-xs">
+                      <span
+                        class="font-mono font-thin bg-red-500 text-gray-700 px-2 rounded-md"
+                        >Medicine</span
+                      >
+                    </span>
+                  </h3>
+                  <span class="">2010</span>
+                </div>
+                <ul class="list-disc">
+                  <li>Reaserch Internship at Infectious Disease Department.</li>
+                </ul>
+              </div>
             </div>
-            <ul class="ml-3">
+          </div>
+
+          <div>
+            <h2 class="font-serif text-2xl font-bold text-violet-800">
+              Education
+            </h2>
+            <div class="flex flex-col gap-y-2">
+              <div>
+                <div class="flex place-content-between">
+                  <h3 class="text-sm font-bold">
+                    Udemy Courses on Software Engineering
+                  </h3>
+                  <span class="">2020-2022</span>
+                </div>
+                <ul class="list-disc flex flex-col gap-1">
+                  <li>
+                    Fundementals of React.JS
+                    <span
+                      class="font-mono font-thin bg-yellow-300 text-gray-700 px-2 rounded-md"
+                      >JavaScript</span
+                    >
+                    <span
+                      class="font-mono font-thin bg-blue-300 text-gray-700 px-2 rounded-md"
+                      >React</span
+                    >
+                  </li>
+                  <li>
+                    Fundementals of Golang
+                    <span
+                      class="font-mono font-thin bg-cyan-300 text-gray-700 px-2 rounded-md"
+                      >Golang</span
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex place-content-between">
+                  <h3 class="text-sm font-bold">
+                    HardvardX - Fundementals of Neuroscience
+                  </h3>
+                  <span class="">2019</span>
+                </div>
+                <ul class="list-disc">
+                  <li>
+                    Fundementals of Neurons and The Brain
+                    <span
+                      class="font-mono font-thin bg-red-500 text-gray-700 px-2 rounded-md"
+                      >Medicine</span
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="flex place-content-between">
+                  <h3 class="text-sm font-bold">
+                    Instituto Tecnologico de Estudios Superiores de Monterrey
+                  </h3>
+                  <span class="">2010-2018</span>
+                </div>
+                <ul class="list-disc">
+                  <li>
+                    Medical Doctor - Physician and Surgeon
+                    <span
+                      class="font-mono font-thin bg-red-500 text-gray-700 px-2 rounded-md"
+                      >Medicine</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h2 class="font-serif text-2xl font-bold text-violet-800">
+              Publications
+            </h2>
+            <h3 class="text-mg font-bold">Mexican Journal of Neuroscience</h3>
+            <ul class="list-disc">
               <li>
-                - 2D platformer where the player has to fetch items to win the
-                game.
+                <span class="flex place-content-between">
+                  <a
+                    href="http://previous.revmexneurociencia.com/wp-content/uploads/2018/01/RevMexNeuroci_Resumenes_de_trabajos_libres_2017_completo.pdf"
+                  >
+                    <p class="underline underline-offset-4 text-violet-700">
+                      Hemangiopericytoma: Case report and review
+                      <img
+                        class="w-3 h-3 inline mr-2"
+                        src="./assets/arrow-up-right-from-square-solid.svg"
+                      />
+                    </p>
+                  </a>
+                  <span class="">2016-2017</span>
+                </span>
               </li>
               <li>
-                - Enemy consists of AI guided robot that also fetch items,
-                inconvencing the player.
+                <span class="flex place-content-between">
+                  <a
+                    href="http://previous.revmexneurociencia.com/wp-content/uploads/2018/01/RevMexNeuroci_Resumenes_de_trabajos_libres_2017_completo.pdf"
+                  >
+                    <p class="underline underline-offset-4 text-violet-700">
+                      Acute Toxic Leukoencephalopathy caused by thermogenics:
+                      Case series: Mexican Journal of Neuroscience
+                      <img
+                        class="w-3 h-3 inline mr-2"
+                        src="./assets/arrow-up-right-from-square-solid.svg"
+                      />
+                    </p>
+                  </a>
+                  <span class="">2016-2017</span>
+                </span>
               </li>
-              <li>- Allows searching for titles</li>
             </ul>
           </div>
 
-          <div class="flex place-content-start w-90">
-            <span
-              class="mx-2 text-xs font-thin bg-gray-200 text-gray-700 px-2 py-1 rounded-md"
-            >
-              JavaScript | Node.js</span
-            >
-            <h3 class="font-semibold mr-6">Bard</h3>
+          <div>
+            <h2 class="font-serif text-2xl font-bold text-violet-800">
+              Languages
+            </h2>
+            <ul class="list-disc">
+              <li>Native: Spanish</li>
+              <li>Fluent: English (IELTS Certified)</li>
+              <li>Basic: German, French</li>
+            </ul>
           </div>
-          <ul class="ml-3">
-            <li>
-              - App to keep track the articles I read and displays them on my
-              website.
-            </li>
-            <li>
-              - Uses CLI to sync github document with links to my website.
-            </li>
-            <li>
-              - Looks for metadata images of articles to display them in my
-              website.
-            </li>
-          </ul>
+
+          <div>
+            <h2 class="font-serif text-2xl font-bold text-violet-800">
+              Personal
+            </h2>
+            <ul class="list-disc">
+              <li>Game Jams: including GMTK and Godot Wild Jam</li>
+              <li>Hackerrank, Project Euler</li>
+              <li>Video Game Art Design</li>
+              <li>Freelance Digital Artist</li>
+              <li>Neurosciences</li>
+            </ul>
+          </div>
         </div>
-
-        <div class="mb-4">
-          <h2 class="text-xl font-bold text-violet-800">Skills</h2>
-          <div
-            class="w-auto h-auto mt-2 mb-2 pl-6 grid gap-2 grid-cols-3 grid-flow-row auto-rows-max text-center text-sm"
-          >
-            <p class="bg-gray-200 rounded px-2 font-semibold">JavaScript</p>
-            <p class="bg-gray-200 rounded px-2 text-center font-semibold">
-              TypeScript
-            </p>
-            <p class="bg-gray-200 rounded px-2 text-center font-semibold">
-              React
-            </p>
-            <p class="bg-gray-200 rounded px-2 text-center font-semibold">
-              Node.js
-            </p>
-            <p class="bg-gray-200 rounded px-2 text-center font-semibold">
-              HTML5/CSS
-            </p>
-            <p class="bg-gray-200 rounded px-2 text-center font-semibold">
-              Golang
-            </p>
-            <p class="bg-gray-200 rounded px-2 text-center font-semibold">
-              Git
-            </p>
-            <p class="bg-gray-200 rounded px-2 text-center font-semibold">
-              CLIs
-            </p>
-            <p class="bg-gray-200 rounded px-2 text-center font-semibold">
-              MATLAB
-            </p>
-            <p class="bg-gray-200 rounded px-2 text-center font-semibold">
-              GDScript
-            </p>
-          </div>
-          <h3 class="text-base font-semibold">Languages</h3>
-          <ul class="pl-6">
-            <li>Native Spanish speaker</li>
-            <li>
-              Fluent English speaker<span class="text-sm"
-                >- (IELTS Certified)</span
-              >
-            </li>
-          </ul>
-          <h3 class="text-base font-semibold">Languages</h3>
-          <ul class="pl-6">
-            <li>Windows</li>
-            <li>OS X</li>
-            <li>Linux</li>
-          </ul>
-        </div>
-        <div class="mb-4">
-          <h2 class="text-xl font-bold text-violet-800">Education</h2>
-          <div class="flex place-content-between">
-            <h3 class="mt-2text-base font-semibold">HardvardX</h3>
-            <span class="text-sm">2019</span>
-          </div>
-          <p>
-            Fundamentals of Neuroscience: The electrical properties of the
-            neuron
-          </p>
-          <p>Fundamentals of Neuroscience: Neurons and networks</p>
-          <p>Fundamentals of Neuroscience: The brain</p>
-
-          <div class="flex place-content-between">
-            <h3 class="mt-2 text-base font-semibold">
-              Instituto Tecnologico de Estudios Superiores de Monterrey
-            </h3>
-            <span class="text-sm">2010-2018</span>
-          </div>
-          <p>MD | Physician and Surgeon</p>
-
-          <div class="flex place-content-between">
-            <h3 class="mt-2 text-base font-semibold">
-              Houston Methodist Research Institute
-            </h3>
-            <span class="text-sm">2010</span>
-          </div>
-          <p>Summer Reaserch Internship in the Infectious Disease Department</p>
-        </div>
-
-        <div class="mb-4">
-          <h2 class="text-xl font-bold text-violet-800">Experience</h2>
-          <div class="flex place-content-between">
-            <h3 class="mt-2 text-base font-semibold">JAVA Plasticos</h3>
-            <span class="text-sm">2022</span>
-          </div>
-          <p>Freelance web developer</p>
-
-          <div class="flex place-content-between">
-            <h3 class="mt-2 text-base font-semibold">DIF Capullos</h3>
-            <span class="text-sm">2018-2019</span>
-          </div>
-          <p>Medical Staff</p>
-          <p>
-            Worked in collaboration with other health staff members to provide
-            care for the State foster system children
-          </p>
-        </div>
-
-        <div class="mb-4">
-          <h2 class="text-xl font-bold text-violet-800">Publications</h2>
-          <div class="flex place-content-between">
-            <h3 class="mt-2 text-base font-semibold">
-              Instituto Tecnologico de Monterrey: Neurology Department
-            </h3>
-            <span class="text-sm">2016-2017</span>
-          </div>
-
-          <a
-            href="http://previous.revmexneurociencia.com/wp-content/uploads/2018/01/RevMexNeuroci_Resumenes_de_trabajos_libres_2017_completo.pdf"
-          >
-            <p>Mexican Journal of Neuroscience</p>
-            <p>Hemangiopericytoma: Case report and review</p>
-          </a>
-          <span class="text-sm">2016-2017</span>
-          <a
-            href="http://previous.revmexneurociencia.com/wp-content/uploads/2018/01/RevMexNeuroci_Resumenes_de_trabajos_libres_2017_completo.pdf"
-          >
-            <p>Mexican Journal of Neuroscience</p>
-            <p>
-              Acute Toxic Leukoencephalopathy caused by thermogenics: Case
-              series
-            </p>
-          </a>
-        </div>
-
-        <div class="mb-4">
-          <h2 class="text-xl font-bold text-violet-800">Achievements</h2>
-          <div class="flex place-content-between">
-            <h3 class="mt-2 text-base font-semibold">100 Day Code Challenge</h3>
-            <span class="text-sm">2021</span>
-          </div>
-          <p>Challenged myself to do 100 days of code</p>
-
-          <div class="flex place-content-between">
-            <h3 class="mt-2 text-base font-semibold">
-              Hospital Angeles Chihuahua
-            </h3>
-            <span class="text-sm">2018</span>
-          </div>
-          <p>Attended Jornadas Medicas XX Aniversario</p>
-
-          <div class="flex place-content-between">
-            <h3 class="mt-2 text-base font-semibold">
-              Simposio de Residentes 2.0
-            </h3>
-            <span class="text-sm">2018</span>
-          </div>
-          <p>Attended Medical Residency Simposium</p>
-        </div>
-
-        <div class="mb-4">
-          <h2 class="text-xl font-bold text-violet-800">Personal</h2>
-          <p>Game Jams: including GMTK and Godot Wild Jam</p>
-          <p>Hackerrank, Project Euler</p>
-          <p>Video Game Art Design</p>
-          <p>Freelance Digital Artist</p>
-          <p>Neurosciences</p>
-        </div>
+        <!-- End Column 2 -->
       </div>
     </div>
   </body>
